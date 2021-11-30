@@ -31,7 +31,7 @@ branch = BranchPythonOperator(task_id='validation', python_callable=some_conditi
 
 first_pipeline = DummyOperator(task_id='first_pipeline', dag=dag)
 
-second_pipeline = DummyOperator(task_id='second_pipeline', ag=dag)
+second_pipeline = DummyOperator(task_id='second_pipeline', dag=dag)
 
 first_pipeline_next_step = DummyOperator(task_id='first_pipeline_next_step', dag=dag)
 second_pipeline_next_step = DummyOperator(task_id='second_pipeline_next_step', dag=dag)
